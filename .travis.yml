@@ -9,9 +9,9 @@ script:
   - cobalt build
 
 after_success: |
-  [ $TRAVIS_BRANCH = master ] &&  
-  [ $TRAVIS_PULL_REQUEST = false ] &&  
-  cobalt import &&
-  git config user.name "Cobalt Site Deployer" &&
+  [ $TRAVIS_BRANCH = source ] &&
+  [ $TRAVIS_PULL_REQUEST = false ] &&
+  cobalt import --branch master &&
+  git config user.name "thowenzel" &&
   git config user.email "thowenzel@googlemail.com" &&
   git push -fq https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git gh-pages

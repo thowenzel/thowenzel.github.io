@@ -2,7 +2,7 @@ rss: rss.xml
 name: Thomas Wenzel
 description: Personal Blog
 source: ./
-dest: build
+dest: ./build
 posts: posts
 drafts: _drafts
 ignore: ["README.md", ".git", "build", "Makefile", "todo.txt"]
