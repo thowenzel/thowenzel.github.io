@@ -1,9 +1,6 @@
+name: cobalt blog
 source: "."
 dest: "build"
-posts: blog
-drafts: _drafts
-ignore: ["README.md", "build/*", ".git/*"]
-rss: rss.xml
-name: Geek ways
-description: Things about programming!
-link: https://thowenzel.github.io/
+ignore:
+  - .git/*
+  - build/*
