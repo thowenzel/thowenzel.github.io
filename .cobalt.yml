@@ -1,5 +1,5 @@
-source: ./
-dest: ./build
+source: "."
+dest: "build"
 posts: blog
 drafts: _drafts
 ignore: ["README.md", "build/*", ".git/*"]
