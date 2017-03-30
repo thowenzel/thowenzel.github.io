@@ -1,6 +1,8 @@
-name: cobalt blog
-source: "."
-dest: "build"
-ignore:
-  - .git/*
-  - build/*
+source: ./
+dest: ./build
+posts: blog
+drafts: _drafts
+ignore: ["README.md", "build/*", ".git/*"]
+rss: rss.xml
+name: Geek ways
+description: Things about programming!
