@@ -10,7 +10,7 @@ Heute habe ich angefangen, mit dem Editor Atom zu arbeiten und zu schauen, ob di
 
 __[Atom](https://atom.io/)__ ist ein von GitHub entwickelter, konfigurier- und erweiterbarer Texteditor, der unter der MIT-Lizenz steht. __Atom__ basiert auf Electron und orientiert sich an anderen mächtigen Editoren wie __Sublime Text__.
 
-####Funktionsübersicht####
+__Funktionsübersicht:__
 * Syntaxhervorhebung für viele Sprachen, über Packages erweiterbar
 * Code-Schnipsel-Verwaltung
 * Auto-Vervollständigung
