@@ -5,7 +5,7 @@
         {% if is_post %}
           <title>{{ title }}</title>
         {% else %}
-       	  <title>Cobalt.rs Blog</title>
+       	  <title>My nerdy notes</title>
         {% endif %}
     </head>
     <body>
@@ -16,5 +16,6 @@
         {{ content }}
       {% endif %}
     </div>
+    {{ include "_layouts/_footer.liquid" }}
   </body>
 </html>
