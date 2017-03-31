@@ -14,5 +14,4 @@ after_success: |
   cobalt import --branch master &&
   git config user.name "Cobalt Site Deployer" &&
   git config user.email "thowenzel@googlemail.com" &&
-  git config user.password "b322782f1b6cfc44f3a22a770dc1fb28e3d1014f" &&
   git push -fq https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git gh-pages
