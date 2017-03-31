@@ -3,6 +3,7 @@ extends: default.liquid
 title: Erste Schritte mit Atom
 date:       17 Jan 2017 00:00:00 +0000
 humandate:  17.01.2017
+tags: Atom
 ---
 
 Heute habe ich angefangen, mit dem Editor Atom zu arbeiten und zu schauen, ob dieser meinen bisherigen Editor (VIM) ablösen kann.
