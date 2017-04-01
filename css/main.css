@@ -1,0 +1,34 @@
+/*
+ * Base structure
+ */
+
+html,
+body {
+  font-family: 'Muli', sans-serif;
+  height: 100%;
+  background-color: #fff;
+  color: #444;
+  text-align: center;
+  text-shadow: none;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #555;
+  width: 90%;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.page-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  padding-bottom: 5em;
+  overflow: hidden;
+}
+
+.page-wrapper-inner {
+  vertical-align: top;
+}

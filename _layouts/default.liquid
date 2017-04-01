@@ -5,16 +5,21 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>My nerdy notes</title>
 
+      <link rel="stylesheet" href="/css/main.css">
+      <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
       <meta name="author" content="Thomas Wenzel">
       <meta name="description" content="Personal website of Thomas Wenzel. Rust lover."/>
     </head>
     <body>
-    <div>
-      {% if is_post %}
-        {% include '_layouts/post.liquid' %}
-      {% else %}
-        {{ content }}
-      {% endif %}
+    <div class="site-wrapper">
+     <div class="site-wrapper-inner">
+        {% if is_post %}
+          {% include '_layouts/post.liquid' %}
+        {% else %}
+          {{ content }}
+        {% endif %}
+      </div>
     </div>
     {{ include "_layouts/_footer.liquid" }}
   </body>
