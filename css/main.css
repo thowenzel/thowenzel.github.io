@@ -1,4 +1,12 @@
 /*
+ * Imports
+ */
+
+@import "navigation.css";
+@import "normalize.css";
+
+
+/*
  * Base structure
  */
 
@@ -10,37 +18,84 @@ html {
 body {
   margin: 0; }
 
-
+/*--------------------------------------------------------------
+Reset
+--------------------------------------------------------------*/
+a,
+abbr,
+acronym,
+address,
+applet,
+big,
+blockquote,
+body,
+caption,
+cite,
+code,
+dd,
+del,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 html,
-body {
-  font-family: 'Muli';
-  height: 100%;
-  background-color: #fff;
-  color: #444;
-  text-align: center;
-  text-shadow: none;
-}
-
-hr {
+iframe,
+ins,
+kbd,
+label,
+legend,
+li,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+small,
+span,
+strike,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+tt,
+ul,
+var {
   border: 0;
-  height: 1px;
-  background-color: #555;
-  width: 90%;
-}
+  font-family: 'Muli';
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline; }
 
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-  display: table;
-  width: 100%;
-  height: 100%; /* For at least Firefox */
-  min-height: 100%;
-  padding-bottom: 5em;
-  overflow: hidden;
-}
+/*--------------------------------------------------------------
+Content
+--------------------------------------------------------------*/
+.site-content {
+  min-height: calc(100% - 274px); }
 
-.site-wrapper-inner {
-  vertical-align: top;
-}
+.content-area {
+  padding-top: 70px; }
 
 /*--------------------------------------------------------------
  Elements
@@ -116,80 +171,3 @@ Content
   max-width: 920px;
   margin: 0 auto;
   padding: 0 50px; }
-
-.site-header {
-  width: 100%;
-  background: #fff;
-  border-bottom: 1px solid #dcdcdc;
-  z-index: 30;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding-left: 50px;
-  padding-right: 50px;
-  height: 70px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-  .site-header .button-wrap {
-    display: none;
-    float: right;
-    padding-top: 25px; }
-  .site-header .menu-toggle {
-    width: 20px;
-    height: 20px;
-    background: url("../images/menu.svg") center no-repeat;
-    text-indent: -99999px;
-    overflow: hidden;
-    border: none;
-    box-shadow: none;
-    outline: none;
-    opacity: 0.25; }
-
-.header-inside {
-  display: table;
-  height: 100%;
-  width: 100%; }
-
-.logo {
-  display: table-cell;
-  vertical-align: middle; }
-  .logo a {
-    display: inline-block; }
-    .logo a img {
-      display: block;
-      height: 60px; }
-
-.navbar {
-  float: right;
-  padding-top: 25px; }
-  .navbar ul:after {
-    content: '';
-    display: block;
-    clear: both;
-    height: 0;
-    visibility: hidden; }
-  .navbar ul li {
-    position: relative;
-    float: left;
-    margin-left: 20px; }
-    .navbar ul li a {
-      text-decoration: none;
-      line-height: 1.5; }
-      .navbar ul li a:hover {
-        opacity: 1; }
-
-.navbar ul li:before {
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  content: "";
-  width: 0%;
-  height: 1px;
-  background: #7e7e7e;
-  display: block;
-  -webkit-transition: width 0.25s ease;
-  transition: width 0.25s ease; }
-
-.navbar ul li:hover:before {
-  width: 100%; }
