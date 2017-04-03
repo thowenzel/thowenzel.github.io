@@ -5,13 +5,48 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>My nerdy notes</title>
 
-      <link rel="stylesheet" href="/css/main.css">
+      <link rel="stylesheet" href="../css/main.css">
       <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
       <meta name="author" content="Thomas Wenzel">
       <meta name="description" content="Personal website of Thomas Wenzel. Rust lover."/>
     </head>
     <body>
+    <!--Navigation-->
+    <header class="site-header">
+      <div class="site-header-inside">
+        <div class="logo">
+          <a href="/" rel="home">
+            <img src="../assets/avatar.png" alt="avatar" height="60">
+          </a>
+        </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse">
+        <ul class="navbar-nav">
+          <li>
+            <a href="/.">              
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/archives">
+              Archiv                
+            </a>
+          </li>
+          <li>
+            <a href="/about">   
+              Über mich     
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+  </div>
+</header>
+    <!--Main content-->
     <div class="site-wrapper">
      <div class="site-wrapper-inner">
         {% if is_post %}
