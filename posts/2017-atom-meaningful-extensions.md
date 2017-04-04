@@ -19,7 +19,7 @@ __[Atom](https://atom.io/)__ lebt ja insbesondere von der guten Konfigurierbarke
 
 Die Erweiterung *[minimap](https://atom.io/packages/minimap)* bietet für eine geöffnete Datei eine Vorschau auf den vollständigen Inhalt und zeigt den Bereich, den man gerade sieht. Über die Vorscha kann gerade in größeren Dateien schnell navigiert werden.
 
-![Atom-Editor mit Erweiterung minimap](https://thowenzel.github.io/hubpress.io/images/atom_editor_plugin_minimap.png)
+![Atom-Editor mit Erweiterung minimap](../img/atom_editor_plugin_minimap.png)
 
 __Weitere Infos:__ [minimap](https://atom.io/packages/minimap)
 
@@ -31,7 +31,7 @@ __Weitere Infos:__ [minimap](https://atom.io/packages/minimap)
 
 Die Erweiterung *[highlight-selected](https://atom.io/packages/highlight-selected)* ist vor allem beim Programmieren sehr hilfreich, sie zeigt nach einem Doppelklick auf ein Wort (z.B. Funktionsname, Variable) alle anderen Vorkommen des ausgewählten Wortes in der Datei an.
 
-![Erweiterung highlight-selected in Aktion](https://thowenzel.github.io/hubpress.io/images/atom_editor_example_package_highlight-selected.png)
+![Erweiterung highlight-selected in Aktion](../img/atom_editor_example_package_highlight-selected.png)
 
 ## [open-recent](https://atom.io/packages/open-recent)
 
