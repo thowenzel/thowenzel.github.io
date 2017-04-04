@@ -1,8 +1,11 @@
-<div class="container blog-post-container">
+<div class="post">
   <h2>{{ title }}</h2>
-  <div class="blog-post-body">
-    <p>
-      {{content}}
-    </p>
+  <div class="post-body">
+    {% if date %}
+      <div id="published-date">
+        <i>Veröffentlicht am {{ humandate }}</i>
+      </div>
+    {% endif %}
+      {{ content }}   
   </div>
 </div>

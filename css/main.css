@@ -1,105 +1,111 @@
-/*
- * Imports
- */
+/*--------------------------------------------------------------
+Imports
+--------------------------------------------------------------*/
 
 @import "navigation.css";
 @import "normalize.css";
 
-
-/*
- * Base structure
- */
-
-html {
-  font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
-
-body {
-  margin: 0; }
-
 /*--------------------------------------------------------------
-Reset
+Reset some basic elements
 --------------------------------------------------------------*/
-a,
-abbr,
-acronym,
-address,
-applet,
-big,
-blockquote,
-body,
-caption,
-cite,
-code,
-dd,
-del,
-dfn,
-div,
-dl,
-dt,
-em,
-fieldset,
-font,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-html,
-iframe,
-ins,
-kbd,
-label,
-legend,
-li,
-object,
-ol,
-p,
-pre,
-q,
-s,
-samp,
-small,
-span,
-strike,
-strong,
-sub,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-tr,
-tt,
-ul,
-var {
-  border: 0;
-  font-family: 'Muli';
-  font-size: 100%;
-  font-style: inherit;
-  font-weight: inherit;
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
   margin: 0;
-  outline: 0;
   padding: 0;
-  vertical-align: baseline; }
+}
 
 /*--------------------------------------------------------------
-Content
+Basic stylings
 --------------------------------------------------------------*/
-.site-content {
-  min-height: calc(100% - 274px); }
+body {
+  font-family: Muli, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #111;
+  background-color: #fdfdfd;
+}
 
-.content-area {
-  padding-top: 70px; }
+/*--------------------------------------------------------------
+Wrapper
+--------------------------------------------------------------*/
+.wrapper { 
+  max-width: -webkit-calc(800px - (30px * 2));
+  max-width: calc(800px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    max-width: -webkit-calc(800px - (30px));
+    max-width: calc(800px - (30px));
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+/*--------------------------------------------------------------
+Footer
+--------------------------------------------------------------*/
+.site-footer {
+  border-top: 1px solid #e8e8e8;
+  margin-top: 30px;
+  padding: 5px 0;
+}
+
+.footer-col-wrapper {
+  font-size: 15px;
+  color: #828282;
+  margin-left: -15px;
+}
+
+.footer-col {
+  float: left;
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+
+.footer-col-1 {
+  width: -webkit-calc(33% - (30px / 2));
+  width: calc(33% - (30px / 2));
+}
+
+.footer-col-2 {
+  width: -webkit-calc(33% - (30px / 2));
+  width: calc(33% - (30px / 2));
+  text-align: center;
+}
+
+.footer-col-3 {
+  width: -webkit-calc(33% - (30px / 2));
+  width: calc(33% - (30px / 2));
+  text-align: right;
+  }
+
+@media screen and (max-width: 800px) {
+  .footer-col-1, .footer-col-2 {
+    width: -webkit-calc(50% - (30px / 2));
+    width: calc(50% - (30px / 2));
+  }
+  .footer-col-3 {
+    width: -webkit-calc(100% - (30px / 2));
+    width: calc(100% - (30px / 2)); }
+  }
+
+@media screen and (max-width: 600px) {
+  .footer-col { float: none; width: -webkit-calc(100% - (30px / 2));
+  width: calc(100% - (30px / 2)); }
+}
 
 /*--------------------------------------------------------------
  Elements
 --------------------------------------------------------------*/
+blockquote, dl, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul {
+  margin: 1rem 0 0;
+}
+
 a#more,
 hr {
   display: block;
@@ -111,10 +117,7 @@ hr {
 
 ol,
 ul {
-  margin: 0; }
-
-ul {
-  list-style: none; }
+  margin-left: 15px; }
 
 ol {
   list-style: decimal; }
@@ -123,6 +126,36 @@ li > ol,
 li > ul {
   margin-bottom: 0;
   margin-left: 1.5em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+pre, code {
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: rgba(0,0,0,.05);
+  font-family: Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: .833rem;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+#published-date {
+  color: #888;
+  font-size: 0.8em;
+  margin-bottom: 30px;
+}
+
+img {
+    max-width: 100%;
+}
 
 /*--------------------------------------------------------------
 Links
@@ -144,9 +177,7 @@ a:hover {
 Content
 --------------------------------------------------------------*/
 .site-content {
-  min-height: calc(100% - 274px); }
-
-.content-area {
+  min-height: calc(100% - 274px);
   padding-top: 70px; }
 
 .error404 .content-area,
@@ -161,13 +192,11 @@ Content
   background: white;
   position: relative; }
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding-left: 50px;
-  padding-right: 50px; }
-
 .inside-wrapper {
   max-width: 920px;
   margin: 0 auto;
   padding: 0 50px; }
+
+.home {
+  text-align: center;
+}

@@ -6,7 +6,7 @@
       <title>My nerdy notes</title>
 
       <link rel="stylesheet" href="../css/main.css">
-      <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli" >
 
       <meta name="author" content="Thomas Wenzel">
       <meta name="description" content="Personal website of Thomas Wenzel. Rust lover."/>
@@ -14,7 +14,7 @@
     <body>
     <!--Navigation-->
     <header class="site-header">
-      <div class="site-header-inside">
+      <div class="wrapper site-header-inside">
         <div class="logo">
           <a href="https://thowenzel.github.io/" rel="home">
             <img src="../assets/avatar.png" alt="avatar" height="60">
@@ -46,16 +46,15 @@
     </nav>
   </div>
 </header>
-    <!--Main content-->
-    <div class="site-content">
-     <div class="content-area">
+    <main class="site-content">
+     <div class="wrapper">
         {% if is_post %}
           {% include '_layouts/post.liquid' %}
         {% else %}
           {{ content }}
         {% endif %}
       </div>
-    </div>
+    </main>
     {{ include "_layouts/_footer.liquid" }}
   </body>
 </html>

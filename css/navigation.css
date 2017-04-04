@@ -6,6 +6,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  margin-top: 5px;
   padding-left: 50px;
   padding-right: 50px;
   height: 70px;
@@ -59,6 +60,9 @@
       line-height: 1.5; }
       .navbar ul li a:hover {
         opacity: 1; }
+.navbar ul {
+  list-style: none;
+}
 
 .navbar ul li:before {
   position: absolute;

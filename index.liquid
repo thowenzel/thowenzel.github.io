@@ -1,12 +1,11 @@
 extends: default.liquid
 ---
-<div >
+<div class="home">
   <h2>My nerdy notes</h2>
   <!--<br />-->
   <div>
     {% for post in posts %}
       <div>
-        <h4>{{post.title}}</h4>
         <h4><a href="{{post.path}}">{{ post.title }}</a></h4>
       </div>
     {% endfor %}
