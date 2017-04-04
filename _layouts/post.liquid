@@ -1,11 +1,18 @@
 <div class="post">
   <h2>{{ title }}</h2>
   <div class="post-body">
-    {% if date %}
-      <div id="published-date">
-        <i>Veröffentlicht am {{ humandate }}</i>
-      </div>
-    {% endif %}
-      {{ content }}   
+    <div id="metadata">
+      {% if date %}
+        <div>
+          <i>Veröffentlicht am {{ humandate }}</i>
+        </div>
+      {% endif %}
+      {% if tags %}
+        <div>
+          <i>tags: {{ tags }}</i>
+        </div>
+      {% endif %}
+    </div>
+    {{ content }}   
   </div>
 </div>
