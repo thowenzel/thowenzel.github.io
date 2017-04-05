@@ -5,9 +5,15 @@ extends: default.liquid
   <!--<br />-->
   <div>
     {% for post in posts %}
-      <div>
-        <h4><a href="{{post.path}}">{{ post.title }}</a></h4>
-      </div>
+      <article>
+        <h3><a href="{{ post.path }}">{{ post.title }}</a></h3>
+        <div class="post-preview">
+          {{ post.content | truncatewords: 30, '...' }}
+        </div>
+        <p class="readmore">
+          <a href="{{ post.path }}">Weiterlesen >></a>
+        </p>
+      </article>
     {% endfor %}
   </div>
 </div>
