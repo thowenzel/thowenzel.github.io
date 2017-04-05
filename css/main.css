@@ -157,6 +157,14 @@ img {
     max-width: 100%;
 }
 
+article h3 {
+    margin: 0;
+    text-align: left;
+    border-bottom: 1px solid #d8e2eb;
+    padding-bottom: 10px;
+    line-height: 1.1;
+}
+
 /*--------------------------------------------------------------
 Links
 --------------------------------------------------------------*/
@@ -165,7 +173,7 @@ a {
   text-decoration: none;
 }
 
-.site-content a {
+.post a {
   text-decoration: underline;
 }
 
@@ -180,30 +188,41 @@ a:hover {
   opacity: 0.8;
 }
 
+.readmore a {
+    font-size: 14px;
+    margin: -20px 0 0;
+    padding: 5px 10px;
+    float: right;
+}
+
 /*--------------------------------------------------------------
 Content
 --------------------------------------------------------------*/
 .site-content {
   min-height: calc(100% - 274px);
-  padding-top: 70px; }
-
-.error404 .content-area,
-.page .content-area {
-  padding-top: 120px; }
-
-.odd {
-  background: #f5f5f5;
-  position: relative; }
-
-.even {
-  background: white;
-  position: relative; }
+  padding-top: 70px;
+}
 
 .inside-wrapper {
   max-width: 920px;
   margin: 0 auto;
-  padding: 0 50px; }
+  padding: 0 50px;
+}
 
-.home {
-  text-align: center;
+article {
+  padding: 25px;
+  background: #fff;
+  margin-top: 40px;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 2px 3px #ebede1;
+  box-shadow: 1px 2px 3px #ebede1;
+  border: 1px solid #ebede1;
+}
+
+.post-preview {
+  clear: left;
+  padding-bottom: 15px;
+  text-align: justify;
+  text-justify: distribute;
+  word-break: normal;
 }
