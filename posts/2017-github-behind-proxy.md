@@ -7,7 +7,7 @@ tags: github, proxy
 path: 2017/github-behind-proxy.html
 ---
 
-Nach der Installation von **Github für Windows** im Büro stellte ich fest, das ich leider hinter eienm Proxy sitze. Um **Github für Windows** für die Nutzung mit Proxy zu konfigurieren gibt es derzeit noch keine Einstellung in der GUI.
+Nach der Installation von **Github für Windows** im Büro stellte ich fest, das ich leider hinter einem Proxy sitze. Um **Github für Windows** für die Nutzung mit Proxy zu konfigurieren gibt es derzeit noch keine Einstellung in der GUI.
 Daher muss die Datei `.gitconfig` unter `C:\Benutzer\<Ihr Benutzername>\gitconfig` oder `C:\Dokumente und Einstellungen\<Ihr Benutzername>\gitconfig` angepasst werden.
 
 Also fix die Datei öffnen und folgende Zeilen (anpassen) einfügen:

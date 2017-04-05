@@ -51,9 +51,7 @@
         {% if is_post %}
           {% include '_layouts/post.liquid' %}
         {% else %}
-          <div class="home">
-            {{ content }}
-          </div>
+          {{ content }}
         {% endif %}
       </div>
     </main>
