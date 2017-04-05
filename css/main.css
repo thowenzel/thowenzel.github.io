@@ -162,16 +162,23 @@ Links
 --------------------------------------------------------------*/
 a {
   color: #3a3a3a;
-  text-decoration: none; }
+  text-decoration: none;
+}
+
+.site-content a {
+  text-decoration: underline;
+}
 
 a:visited {
-  color: #3a3a3a; }
+  color: #3a3a3a;
+}
 
 a:active,
 a:focus,
 a:hover {
   color: #3a3a3a;
-  opacity: 0.8; }
+  opacity: 0.8;
+}
 
 /*--------------------------------------------------------------
 Content
