@@ -169,7 +169,7 @@ article h3 {
 Links
 --------------------------------------------------------------*/
 a {
-  color: #3a3a3a;
+  color: #AE0202;
   text-decoration: none;
 }
 
@@ -178,14 +178,15 @@ a {
 }
 
 a:visited {
-  color: #3a3a3a;
+  color: #AE0202;
 }
 
 a:active,
 a:focus,
 a:hover {
-  color: #3a3a3a;
+  color: #AE0202;
   opacity: 0.8;
+  text-decoration: underline;
 }
 
 .readmore a {
