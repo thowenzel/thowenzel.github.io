@@ -214,9 +214,9 @@ article {
   background: #fff;
   margin-top: 40px;
   border-radius: 4px;
-  -webkit-box-shadow: 1px 2px 3px #ebede1;
-  box-shadow: 1px 2px 3px #ebede1;
-  border: 1px solid #ebede1;
+  -webkit-box-shadow: 1px 2px 3px #e8e8e8;
+  box-shadow: 1px 2px 3px #e8e8e8;
+  border: 1px solid #e8e8e8;
 }
 
 .post-preview {
@@ -225,4 +225,25 @@ article {
   text-align: justify;
   text-justify: distribute;
   word-break: normal;
+}
+
+.position-left {
+    float: left;
+    margin-right: 10px;
+}
+.position-left img {
+    display: block;
+    margin: 1rem 0 0;
+}
+
+.post-content {
+    float: right;
+}
+
+.twocol-col-1 {
+  width: 25%;
+}
+
+.twocol-col-2 {
+  width: 75%;
 }

@@ -4,6 +4,7 @@ title: Rust und Visual Studio Code
 date:       05 Apr 2017 00:00:00 +0000
 humandate:  05.04.2017
 tags: rust, vscode
+categories: Programming
 path: 2017/rust-using-vscode.html
 ---
 Wie in einem älteren Beitrag angekündigt habe, nutze ich inzwischen __[Visual Studio Code](https://code.visualstudio.com/)__.

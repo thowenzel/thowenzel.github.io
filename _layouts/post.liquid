@@ -3,14 +3,13 @@
   <div class="post-body">
     <div id="metadata">
       {% if date %}
-        <div>
           <i>Veröffentlicht am {{ humandate }}</i>
-        </div>
       {% endif %}
       {% if tags %}
-        <div>
-          <i>tags: {{ tags }}</i>
-        </div>
+          <i> - tags: {{ tags }}</i>
+      {% endif %}
+      {% if categories %}
+          <i> - Kategorie: {{ categories }}</i>
       {% endif %}
     </div>
     {{ content }}   
