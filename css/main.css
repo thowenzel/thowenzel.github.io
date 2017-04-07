@@ -180,7 +180,7 @@ a {
   text-decoration: none;
 }
 
-a:visited {
+.post a:visited, .post a:focus, .post a:active {
   color: #AE0202;
 }
 
@@ -196,7 +196,6 @@ a:visited {
 a:active,
 a:focus,
 a:hover {
-  color: #AE0202;
   opacity: 0.8;
   text-decoration: underline;
 }
