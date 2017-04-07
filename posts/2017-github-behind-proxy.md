@@ -4,7 +4,7 @@ title: Github für Windows hinter Proxy
 date:       16 Jan 2017 00:00:00 +0000
 humandate:  16.01.2017
 tags: github, proxy
-path: archiv/github-behind-proxy.html
+path: archiv
 ---
 
 Nach der Installation von **Github für Windows** im Büro stellte ich fest, das ich leider hinter einem Proxy sitze. Um **Github für Windows** für die Nutzung mit Proxy zu konfigurieren gibt es derzeit noch keine Einstellung in der GUI.
