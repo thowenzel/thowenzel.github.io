@@ -107,10 +107,32 @@ blockquote, dl, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul {
 }
 
 blockquote {
-  margin-right: 3ch;
-  padding: 0 0 0 1ch;
-  border: #AE0202 solid;
-  border-width: 0 0 0 .5ch;
+  color: #a09a92;
+  font-style: italic;
+  line-height: 1.4;
+  position: relative;
+  z-index: 10000;
+}
+
+blockquote::before {
+  font-family: "Playfair Display", Georgia, serif;
+  color: #ebe7e1;
+  content: "\201C";
+  display: block;
+  font-size: 98px;
+  font-size: 9.8rem;
+  font-style: normal;
+  left: -20px;
+  line-height: 1;
+  position: absolute;
+  top: -25px;
+  z-index: -1;
+}
+
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 a#more,
