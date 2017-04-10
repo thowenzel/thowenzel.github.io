@@ -8,43 +8,11 @@
       <link rel="stylesheet" href="../css/main.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli" >
 
-      <meta name="author" content="Thomas Wenzel">
+      <meta name="author" content="Thomas Wenzel"/>
       <meta name="description" content="Personal website of Thomas Wenzel. Rust lover."/>
     </head>
     <body>
-    <header class="site-header">
-      <div class="wrapper site-header-inside">
-        <div class="logo">
-          <a href="https://thowenzel.github.io/" rel="home">
-            <img src="../assets/Enso.svg" alt="Headerimage">
-          </a>
-        </div>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse">
-        <ul class="navbar-nav">
-          <li>
-            <a href="https://thowenzel.github.io/">              
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="/archiv">
-              Archiv                
-            </a>
-          </li>
-          <li>
-            <a href="/about">   
-              About     
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </nav>
-  </div>
-</header>
+    {{ include "_layouts/_header.liquid" }}
     <main class="site-content">
      <div class="wrapper">
         {% if is_post %}
