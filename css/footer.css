@@ -93,7 +93,7 @@ footer > ul li .text {
 }
 
 .text h4 {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -112,6 +112,10 @@ footer .bar-wrap {
     width: 95%;
 }
 
+.bar-wrap ul {
+    margin-left: 0;
+}
+
 .links {
     float: left;
     list-style: none outside none;
@@ -124,7 +128,7 @@ footer .bar-wrap {
 }
 
 .links a {
-    color: #778888;
+    color: #ffffff;
 }
 
 .links a:hover {
@@ -138,7 +142,7 @@ footer .bar-wrap {
 }
 
 .social a {
-    color: #778888;
+    color: #ffffff;
     margin-left: 20px;
 }
 
@@ -180,8 +184,12 @@ footer .bar-wrap {
 }
 
 .copyright {
-    color: #778888;
+    color: #ffffff;
     margin-top: 5px;
+}
+
+.copyright a {
+    color: #ffffff;
 }
 
 @media screen and (max-width: 1000px){
