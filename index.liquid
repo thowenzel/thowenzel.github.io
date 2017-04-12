@@ -4,13 +4,17 @@ extends: default.liquid
   <div>
     {% for post in posts %}
       <article>
-        <h3><a href="{{ post.path }}">{{ post.title }}</a></h3>
-        <div class="post-preview">
-          {{ post.content | truncatewords: 30, '...' }}
+        <div class="blog_post clearfix">
+          <h3><a href="{{ post.path }}">{{ post.title }}</a></h3>
+          <div class="post-preview clearfix">
+            {{ post.content | truncatewords: 30, '...' }}
+            <div class="blog_post_control clearfix">
+              <div class="blog_post_control_item blog_post_readmore">
+                <a class="read_more_link" href="{{ post.path }}">Weiterlesen</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="readmore">
-          <a href="{{ post.path }}">Weiterlesen >></a>
-        </p>
       </article>
     {% endfor %}
   </div>
