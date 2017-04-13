@@ -12,3 +12,8 @@ Wie in einem älteren Beitrag angekündigt habe, nutze ich inzwischen __[Visual 
 __Visual Studio Code__ ist ein unter der MIT-Lizenz stehender Quelltext-Editor von Microsoft. Er ist für die Betriebssysteme Windows, MacOS und Linux verfügbar. Technologisch basiert __Visual Studio Code__ auf Electron (Framework) und ermöglicht auch Debugging, IntelliSense und Versionsverwaltung.
 
 ![Visual Studio Code](../img/vscode_editor_overview.png)
+
+### Extensions
+__Visual Studio Code__ lässt sich über das Installieren von Extensions sehr gut an die eigenen Bedürfnisse anpassen.
+
+![Meine Liste der installierten Erweiterungen in VSCode](../img/vscode_editor_installed_extensions.png)
