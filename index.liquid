@@ -1,11 +1,11 @@
 extends: default.liquid
 ---
-<div class="home">
+<div class="home content left">
   <div>
     {% for post in posts %}
       <article>
         <div class="blog_post clearfix">
-          <h3><a href="{{ post.path }}">{{ post.title }}</a></h3>
+          <h2><a href="{{ post.path }}">{{ post.title }}</a></h2>
           <div class="post-preview clearfix">
             {{ post.content | truncatewords: 30, '...' }}
             <div class="blog_post_control clearfix">
@@ -19,3 +19,29 @@ extends: default.liquid
     {% endfor %}
   </div>
 </div>
+<div class="sidebar right">
+  <div class="sidebar-part sidebar-recent-posts">
+    <div class="sidebar-part-content">
+      <h3 class="sidebar-title">Neueste Beiträge</h3>
+      <ul>
+        {% for post in posts %}
+				  <li>
+				    <a href="{{ post.path }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+			</ul>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="sidebar-part sidebar-tag-cloud">
+    <div class="sidebar-part-content">
+      <h3 class="sidebar-title">Tags</h3>
+      <div class="tag-cloud">
+        {% for tag in tags %}
+          {{ tag | link_to_add_tag: tag }}
+        {% endfor %}
+      </div>
+    </div> 
+  </div>
+</div>
+<div class="clear"></div>

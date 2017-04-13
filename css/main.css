@@ -17,9 +17,9 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
 Basic stylings
 --------------------------------------------------------------*/
 body {
-  font-family: Muli, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 170%;
   font-weight: 300;
   color: #111;
   background-color: #fdfdfd;
@@ -35,6 +35,15 @@ Wrapper
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px;
+}
+
+.wrapper {
+    margin-top: 100px;
+}
+.section-inner {
+    width: 1040px;
+    max-width: 86%;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 800px) {
@@ -313,16 +322,126 @@ article {
     display: table;
 }
 
-.home h3 {
-    font-size: 26px;
-    font-weight: bold;
-    margin-top: 16px;
-    margin-bottom: 2px;
+.home h2 {
     letter-spacing: 0.8px;
-    line-height: 35px;
-    font-size: 27px;
     margin-top: 0;
-    margin-bottom: 4px;
     letter-spacing: 0.8px;
     line-height: 35px;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 15px;
+}
+
+.content {
+    width: 65%;
+}
+
+.left {
+    float: left;
+}
+
+.sidebar {
+    width: 27.5%;
+}
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.sidebar-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.sidebar-part {
+    padding-bottom: 15%;
+    border-bottom: 3px solid #EEE;
+    margin-bottom: 15%;
+}
+
+.sidebar-part:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+.sidebar-part-content {
+    color: #555;
+    font-size: 1rem;
+    line-height: 140%;
+}
+
+.sidebar-part-content :last-child {
+    margin-bottom: 0;
+}
+
+.sidebar-part-content > ul > li:first-child {
+    border-top: 0;
+}
+
+.sidebar-part-content ul li {
+    padding: 10px 0;
+    border-top: 1px solid #EEE;
+    line-height: 130%;
+    list-style: none;
+}
+
+.sidebar-recent-posts a {
+    color: #ac0;
+    text-decoration: none;
+    outline: none;
+}
+
+li, ol, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+    line-height: 1;
+    font-family: inherit;
+    text-align: left;
+}
+
+.post ul {
+  list-style: disc;
+  margin-left: 1.5em;
+  line-height: 170%;
+  margin-bottom: 1.1em;
+}
+
+.post-content ol {
+  list-style: decimal;
+  margin-left: 1.5em;
+  line-height: 170%;
+  margin-bottom: 1.1em;
+}
+
+.post li {
+  margin-bottom: 0.5em;
+  line-height: 170%;
+}
+
+.tag-cloud a {
+    display: block;
+    float: left;
+    padding: 8px 11px;
+    line-height: 1;
+    margin: 0 5px 5px 0;
+    background: #BBB;
+    color: #FFF;
+    border-radius: 3px;
+}
+
+.sidebar-tag-cloud .tag-cloud a {
+    font-size: 0.9em !important;
 }
