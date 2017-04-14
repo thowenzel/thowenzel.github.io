@@ -1,28 +1,45 @@
 extends: default.liquid
 ---
-<div class="home content left">
-  <div>
+<!-- Start content left -->
+<div class="content left">
+  <!-- Start posts -->
+  <div class="posts">
     {% for post in posts %}
       <article>
-        <div class="blog_post clearfix">
-          <h2><a href="{{ post.path }}">{{ post.title }}</a></h2>
-          <div class="post-preview clearfix">
-            {{ post.content | truncatewords: 30, '...' }}
-            <div class="blog_post_control clearfix">
-              <div class="blog_post_control_item blog_post_readmore">
-                <a class="read_more_link" href="{{ post.path }}">Weiterlesen</a>
-              </div>
+        <!-- Start post-header -->
+        <div class="post-header">
+          <h2 class="post-title">
+            <a href="{{ post.path }}">{{ post.title }}</a>
+          </h2>
+        <div class="post-meta">
+          <span class="post-date">
+            {% if post.date %}
+              <i>Veröffentlicht am {{ post.humandate }}</i>
+            {% endif %}
+          </span>
+        </div>
+        <!-- End post-header -->
+        <!-- Start post-content -->
+        <div class="post-content">
+          {{ post.content | truncatewords: 30, '...' }}
+          <div class="blog_post_control clearfix">
+            <div class="blog_post_control_item blog_post_readmore">
+              <a class="read_more_link" href="{{ post.path }}">Weiterlesen</a>
             </div>
           </div>
         </div>
+        <!-- End post-content -->
       </article>
     {% endfor %}
   </div>
+  <!-- End posts -->
 </div>
+<!-- End content left -->
+
 <div class="sidebar right">
-  <div class="sidebar-part sidebar-recent-posts">
-    <div class="sidebar-part-content">
-      <h3 class="sidebar-title">Neueste Beiträge</h3>
+  <div class="widget widget-recent-posts">
+    <div class="widget-content">
+      <h3 class="widget-title">Neueste Beiträge</h3>
       <ul>
         {% for post in posts %}
 				  <li>
@@ -33,11 +50,12 @@ extends: default.liquid
     </div>
   </div>
   <div class="clear"></div>
-  <div class="sidebar-part sidebar-tag-cloud">
-    <div class="sidebar-part-content">
-      <h3 class="sidebar-title">Tags</h3>
+  <div class="widget widget-tag-cloud">
+    <div class="widget-content">
+      <h3 class="widget-title">Tags</h3>
       <div class="tag-cloud">
-        
+        <a href="#">Test1</a>
+        <a href="#">Test2</a>
       </div>
     </div> 
   </div>

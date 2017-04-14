@@ -1,17 +1,25 @@
-<div class="post">
-  <h2>{{ title }}</h2>
-  <div class="post-body">
-    <div id="metadata">
-      {% if date %}
-          <i>Veröffentlicht am {{ humandate }}</i>
-      {% endif %}
-      {% if tags %}
-          <i> - tags: {{ tags }}</i>
-      {% endif %}
-      {% if categories %}
-          <i> - Kategorie: {{ categories }}</i>
-      {% endif %}
-    </div>
-    {{ content }}   
-  </div>
+<div class="posts">
+  <article>
+    <!-- Start post-header -->
+      <div class="post-header">
+        <h2 class="post-title">{{ title }}</h2>
+      <div class="post-meta">
+        <span class="post-date">
+          {% if date %}
+            <i>Veröffentlicht am {{ humandate }}</i>
+          {% endif %}
+        </span>
+        <span class="post-date">
+          {% if tags %}
+            <i> - tags: {{ tags }}</i>
+          {% endif %}
+        </span>
+      </div>
+      <!-- End post-header -->
+      <!-- Start post-content -->
+      <div class="post-content">
+        {{ content }} 
+      </div>
+      <!-- End post-content -->
+    </article>
 </div>
