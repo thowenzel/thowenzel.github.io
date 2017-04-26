@@ -439,3 +439,7 @@ public licenses.
 
 Creative Commons may be contacted at creativecommons.org.
 ```
+
+### Header image
+License for the header image is Public Domain CC0.
+
