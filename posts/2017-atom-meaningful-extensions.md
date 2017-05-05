@@ -4,7 +4,7 @@ title: Sinnvolle Erweiterungen für Atom
 date:       18 Jan 2017 00:00:00 +0000
 humandate:  18.01.2017
 tags: atom, packages
-path: 2017/atom-meaningful-extensions.html
+path: /2017/atom-meaningful-extensions.html
 ---
 
 __[Atom](https://atom.io/)__ lebt ja insbesondere von der guten Konfigurierbarkeit und der großen Anzahl an mehr oder weniger sinnvollen Erweiterungen (Packages). Ich werde hier nach und nach die für mich sinnvollsten Erweiterungen kurz vorstellen.
