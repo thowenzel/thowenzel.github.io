@@ -43,7 +43,7 @@ extends: default.liquid
       <ul>
         {% for post in posts %}
 				  <li>
-				    <a href="{{ post.path }}">{{ post.title }}</a>
+				    <a href="/{{ post.path }}">{{ post.title }}</a>
           </li>
         {% endfor %}
 			</ul>

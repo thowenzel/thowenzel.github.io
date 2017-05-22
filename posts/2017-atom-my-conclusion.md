@@ -4,7 +4,7 @@ title: Mein persönliches (Zwischen)Fazit zu Atom
 date:       05 Mar 2017 00:00:00 +0000
 humandate:  15.03.2017
 tags: atom
-path: /2017/atom-my-conclusion.html
+path: 2017/atom-my-conclusion.html
 ---
 
 Nachdem ich __[Atom](https://atom.io/)__ nun eine Zeitlang verwendet habe, ist es Zeit für ein ein kleines Fazit. In den vergangenen Wochen habe ich mit *Atom* simple Textdateien, aber auch Webprojekte (PHP, CSS, HTML) und vor allem *Rust*-Projekte bearbeitet.

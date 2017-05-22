@@ -5,7 +5,7 @@ date:       16 May 2017 00:00:00 +0000
 humandate:  16.05.2017
 tags: rust
 categories: Programming
-path: /2017/why-rust.html
+path: 2017/why-rust.html
 ---
 Warum überhaupt Rust? 
 
