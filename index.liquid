@@ -43,13 +43,13 @@ extends: default.liquid
       <ul>
         {% for post in posts %}
 				  <li>
-				    <a href="/{{ post.path }}">{{ post.title }}</a>
+				    <a href="{{ post.path }}">{{ post.title }}</a>
           </li>
         {% endfor %}
 			</ul>
     </div>
   </div>
-  <div class="clear"></div>
+  <!-- <div class="clear"></div>
   <div class="widget widget-tag-cloud">
     <div class="widget-content">
       <h3 class="widget-title">Tags</h3>
@@ -58,7 +58,7 @@ extends: default.liquid
         <a href="#">Test2</a>
       </div>
     </div> 
-  </div>
+  </div> -->
 </div>
 <div class="clear"></div>
 
