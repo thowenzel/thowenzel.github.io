@@ -13,7 +13,19 @@ __Visual Studio Code__ ist ein unter der MIT-Lizenz stehender Quelltext-Editor v
 
 ![Visual Studio Code](../img/vscode_editor_overview.png)
 
+Warum ich umgestiegen bin, das habe ich ja in einem älteren [Blogbeitrag](../2017/atom-my-conclusion.html) schon beschrieben. Inzwischen kann ich sagen: __Visual Studio Code__ rockt!
+
 ### Extensions
-__Visual Studio Code__ lässt sich über das Installieren von Extensions sehr gut an die eigenen Bedürfnisse anpassen.
+VSCode lässt sich über das Installieren von Extensions sehr gut an die eigenen Bedürfnisse anpassen.
 
 ![Meine Liste der installierten Erweiterungen in VSCode](../img/vscode_editor_installed_extensions.png)
+
+### VSCode für Rust anpassen
+VSCode unterstützt das Highlighting von Rust-Syntax von Haus aus. Um aber einigermaßen produktiv arbeiten zu können, erwarte ich von einem Editor natürlich noch etwas mehr. Das Compilieren, Ausführen und Testen von Rust-Code soll möglich sein.
+
+Als erstes installieren wir daher die Erweiterung __[Rust](https://github.com/editor-rs/vscode-rust)__, diese erweitert die Sprachunterstützung für Rust in VSCode erheblich. Die Erweiterung kann durch Auswahl des unteren Buttons in der Seitenleiste und der Suche nach 'Rust' installiert werden. Vor dem Installieren wird eine Infoseite angezeigt, die weitere Angaben zur Erweiterung bereithält. Nach der Installation lassen sich die Cargo-Kommandos, wie z.B. `build`, `test`, `run`, direkt in VSCode ausführen (Befehlspalette mit *Ctrl+Shift+P* öffnen, die Befehle beginnen alle mit `Cargo: `).
+
+Alternativ lässt sich `cargo` natürlich auch über das integrierte Terminal bedienen.
+
+#### Weiterführende Links:
+* [Setting up a Rust Development Environment](http://asquera.de/blog/2017-03-03/setting-up-a-rust-devenv/)

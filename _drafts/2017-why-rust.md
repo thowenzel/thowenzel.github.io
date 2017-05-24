@@ -16,7 +16,10 @@ Rust ist eine Multiparadigmen-Programmiersprache, das heißt die Sprache vereint
 Die Entwicklung der Sprache begann als persönliches Projekt von Graydon Hoare, einem Mozilla-Mitarbeiter.
 Rust 1.0, die erste stabile Version von Rust (Compiler und Standardbibliothek), wurde am 15. Mai 2015 veröffentlicht.
 
+
+
 #### Weiterführende Links:
+* [TRPL – THE book](http://rust-lang.github.io/book/index.html)
 * [Vorlesung „Programmieren in Rust“, Universität Osnabrück](https://github.com/LukasKalbertodt/programmieren-in-rust)
-* [rust-learning - A bunch of links to blog posts, articles, videos, etc for learning Rust.](https://github.com/ctjhoa/rust-learning)
-* [Learning Rust - Medium](https://medium.com/learning-rust)
+* [rust-learning – A bunch of links to blog posts, articles, videos, etc for learning Rust.](https://github.com/ctjhoa/rust-learning)
+* [Learning Rust](https://medium.com/learning-rust)
