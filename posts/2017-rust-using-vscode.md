@@ -26,7 +26,11 @@ VSCode ist schnell installiert, dazu einfach auf der Seite https://code.visualst
 
 VSCode unterstützt das Highlighting von Rust-Syntax von Haus aus. Um aber einigermaßen produktiv arbeiten zu können, erwarte ich von einem Editor natürlich noch etwas mehr. Das Compilieren, Ausführen und Testen von Rust-Code soll möglich sein.
 
-Ich habe daher __[Rust](https://github.com/editor-rs/vscode-rust)__ installiert, diese erweitert die Sprachunterstützung für Rust in VSCode erheblich. Die Erweiterung kann durch Auswahl des unteren Buttons in der Seitenleiste und der Suche nach 'Rust' installiert werden. Vor dem Installieren wird eine Infoseite angezeigt, die weitere Angaben zur Erweiterung bereithält. Nach der Installation lassen sich die Cargo-Kommandos, wie z.B. `build`, `test`, `run`, direkt in VSCode ausführen (Befehlspalette mit *Ctrl+Shift+P* öffnen, die Befehle beginnen alle mit `Cargo: `).
+Ich habe daher __[Rust](https://github.com/editor-rs/vscode-rust)__ installiert, diese erweitert die Sprachunterstützung für Rust in VSCode erheblich. Die Erweiterung kann durch Auswahl des unteren Buttons in der Seitenleiste und der Suche nach 'Rust' installiert werden.
+
+![Install vscode-rust](../img/vscode_install_rust_addon.gif)
+
+Nach der Installation lassen sich die Cargo-Kommandos, wie z.B. `build`, `test`, `run`, direkt in VSCode ausführen (Befehlspalette mit *Ctrl+Shift+P* öffnen, die Befehle beginnen alle mit `Cargo: `).
 
 Alternativ lässt sich `cargo` natürlich auch über das integrierte Terminal bedienen.
 
