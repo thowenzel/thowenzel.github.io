@@ -51,6 +51,7 @@ Die Einstellungen werden von VSCode in einer JSON-Datei gespeichert und müssen 
 
 #### Weiterführende Links:
 * [Setting up a Rust Development Environment](http://asquera.de/blog/2017-03-03/setting-up-a-rust-devenv/)
+* [Rust Using Visual Studio Code](https://mobiarch.wordpress.com/2015/06/16/rust-using-visual-studio-code/)
 * [Using Visual Studio Code for Rust on Ubuntu](https://klausi.github.io/rustnish/2017/05/28/using-visual-studio-code-for-rust-on-ubuntu.html)
 * [Debugging Rust on Windows using Visual Studio Code](https://sherryummen.in/2016/09/02/debugging-rust-on-windows-using-visual-studio-code/)
 * [Best of Visual Studio Code: Features, Plugins, Acting Like Atom and Sublime](https://scotch.io/tutorials/best-of-visual-studio-code-features-plugins-acting-like-atom-and-sublime)
