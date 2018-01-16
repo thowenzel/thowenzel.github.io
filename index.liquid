@@ -1,21 +1,21 @@
-extends: default.liquid
+layout: default.liquid
 ---
 <!-- Start content left -->
 <div class="content left">
   <!-- Start posts -->
   <div class="posts">
-    {% for post in posts %}
+    {% for post in collections.posts.pages %}
       <article>
         <!-- Start post-header -->
         <div class="post-header">
           <h2 class="post-title">
-            <a href="{{ post.path }}">{{ post.title }}</a>
+            <a href="{{ post.permalink }}">{{ post.title }}</a>
           </h2>
         <div class="post-meta">
           <span class="post-date">
-            {% if post.date %}
-              <i>Veröffentlicht am {{ post.humandate }}</i>
-            {% endif %}
+            {% if post.published_date %}
+              <i>Veröffentlicht am {{ post.data.humandate }}</i>
+            {% endif %} -->
           </span>
         </div>
         <!-- End post-header -->
@@ -24,7 +24,7 @@ extends: default.liquid
           {{ post.content | truncatewords: 30, '...' }}
           <div class="blog_post_control clearfix">
             <div class="blog_post_control_item blog_post_readmore">
-              <a class="read_more_link" href="{{ post.path }}">Weiterlesen</a>
+              <a class="read_more_link" href="{{ post.permalink }}">Weiterlesen</a>
             </div>
           </div>
         </div>
@@ -41,9 +41,9 @@ extends: default.liquid
     <div class="widget-content">
       <h3 class="widget-title">Neueste Beiträge</h3>
       <ul>
-        {% for post in posts %}
+        {% for post in collections.posts.pages %}
 				  <li>
-				    <a href="{{ post.path }}">{{ post.title }}</a>
+				    <a href="{{ post.permalink }}">{{ post.title }}</a>
           </li>
         {% endfor %}
 			</ul>
@@ -57,7 +57,7 @@ extends: default.liquid
         <a href="#">Test1</a>
         <a href="#">Test2</a>
       </div>
-    </div> 
+    </div>
   </div> -->
 </div>
 <div class="clear"></div>

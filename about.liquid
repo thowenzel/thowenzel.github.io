@@ -1,8 +1,8 @@
-extends: default.liquid
-
+permalink: /about/
 title: Über mich
-route: about
-path: about/
+layout: default.liquid
+data:
+  route: about
 ---
 <!-- Start content left -->
 <div class="content left">
@@ -45,9 +45,9 @@ path: about/
         <div class="widget-content">
             <h3 class="widget-title">Neueste Beiträge</h3>
             <ul>
-                {% for post in posts %}
+                {% for post in collections.posts.pages %}
                 <li>
-                    <a href="/{{ post.path }}">{{ post.title }}</a>
+                    <a href="/{{ post.permalink }}">{{ post.title }}</a>
                 </li>
                 {% endfor %}
 			</ul>

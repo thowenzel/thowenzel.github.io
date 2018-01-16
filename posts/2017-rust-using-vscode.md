@@ -1,11 +1,10 @@
-extends: default.liquid
-
+permalink: "/2017/rust-using-vscode.html"
 title: Rust und Visual Studio Code
-date:       06 Apr 2017 00:00:00 +0000
-humandate:  06.04.2017
-tags: rust, vscode
-categories: Programming
-path: 2017/rust-using-vscode.html
+published_date: "2017-04-06 00:00:00 +0000"
+layout: default.liquid
+data:
+  tags: "rust, vscode"
+  humandate: 06.04.2017
 ---
 Wie in einem älteren Beitrag angekündigt habe, nutze ich inzwischen __[Visual Studio Code](https://code.visualstudio.com/)__.
 

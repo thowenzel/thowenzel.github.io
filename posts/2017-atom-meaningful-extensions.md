@@ -1,12 +1,11 @@
-extends: default.liquid
-
+permalink: "/2017/atom-meaningful-extensions.html"
 title: Sinnvolle Erweiterungen für Atom
-date:       18 Jan 2017 00:00:00 +0000
-humandate:  18.01.2017
-tags: atom, packages
-path: 2017/atom-meaningful-extensions.html
+published_date: "2017-01-18 00:00:00 +0000"
+layout: default.liquid
+data:
+  humandate: 18.01.2017
+  tags: "atom, packages"
 ---
-
 __[Atom](https://atom.io/)__ lebt ja insbesondere von der guten Konfigurierbarkeit und der großen Anzahl an mehr oder weniger sinnvollen Erweiterungen (Packages). Ich werde hier nach und nach die für mich sinnvollsten Erweiterungen kurz vorstellen.
 
 4 Erweiterungen, die ich sofort installiert habe:
@@ -35,4 +34,4 @@ Die Erweiterung *[highlight-selected](https://atom.io/packages/highlight-selecte
 
 ## [open-recent](https://atom.io/packages/open-recent)
 
-Die Erweiterung *[open-recent](https://atom.io/packages/open-recent)* bringt dem Atom-Editor eine Liste der zuletzt geöffneten Dateien. 
+Die Erweiterung *[open-recent](https://atom.io/packages/open-recent)* bringt dem Atom-Editor eine Liste der zuletzt geöffneten Dateien.

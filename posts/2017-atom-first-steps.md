@@ -1,12 +1,11 @@
-extends: default.liquid
-
+permalink: "/2017/atom-first-steps.html"
 title: Erste Schritte mit Atom
-date:       17 Jan 2017 00:00:00 +0000
-humandate:  17.01.2017
-tags: atom
-path: 2017/atom-first-steps.html
+published_date: "2017-01-17 00:00:00 +0000"
+layout: default.liquid
+data:
+  tags: atom
+  humandate: 17.01.2017
 ---
-
 Heute habe ich angefangen, mit dem Editor Atom zu arbeiten und zu schauen, ob dieser meinen bisherigen Editor (VIM) ablösen kann.
 
 __[Atom](https://atom.io/)__ ist ein von GitHub entwickelter, konfigurier- und erweiterbarer Texteditor, der unter der MIT-Lizenz steht. __Atom__ basiert auf Electron und orientiert sich an anderen mächtigen Editoren wie __Sublime Text__.

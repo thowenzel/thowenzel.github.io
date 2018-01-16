@@ -5,13 +5,13 @@
         <h2 class="post-title">{{ page.title }}</h2>
       <div class="post-meta">
         <span class="post-date">
-          {% if published_date %}
+          {% if page.published_date %}
             <i>Veröffentlicht am {{ page.data.humandate }}</i>
           {% endif %}
         </span>
         <span class="post-date">
-          {% if tags %}
-            <i> - tags: {{ tags }}</i>
+          {% if page.data.tags %}
+            <i> - tags: {{ page.data.tags }}</i>
           {% endif %}
         </span>
       </div>

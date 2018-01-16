@@ -1,9 +1,7 @@
-extends: default.liquid
-
-title: thowenzel.github.io/ - License
-path:  license/
+permalink: /license/
+title: "thowenzel.github.io/ - License"
+layout: default.liquid
 ---
-
 # License Information
 
 Copyright 2017 Thomas Wenzel.

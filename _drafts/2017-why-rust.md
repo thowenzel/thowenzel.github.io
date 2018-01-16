@@ -1,11 +1,10 @@
-extends: default.liquid
-
+permalink: "/2017/why-rust.html"
 title: Warum Rust
-date:       16 May 2017 00:00:00 +0000
-humandate:  16.05.2017
-tags: rust
-categories: Programming
-path: 2017/why-rust.html
+published_date: "2017-05-16 00:00:00 +0000"
+layout: default.liquid
+data:
+  tags: rust
+  humandate: 16.05.2017
 ---
 Warum überhaupt Rust? 
 
