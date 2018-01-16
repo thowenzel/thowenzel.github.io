@@ -2,16 +2,17 @@ sudo: false
 language: rust
 
 before_script:
-  - cargo install cobalt-bin
-  - export PATH="$PATH:/home/travis/.cargo/bin"
+  - cargo install --force --git https://github.com/cobalt-org/cobalt.rs.git
+  - export PATH="$PATH:~/.cargo/bin"
 
 script:
   - cobalt build
 
-after_success: |
-  [ $TRAVIS_BRANCH = source ] &&
-  [ $TRAVIS_PULL_REQUEST = false ] &&
-  cobalt import --branch master &&
-  git config user.name "Cobalt Site Deployer" &&
-  git config user.email "thowenzel@googlemail.com" &&
-  git push -fq https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git master
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: "$GH_TOKEN"
+  local_dir: build
+  target_branch: master
+  on:
+    branch: source
