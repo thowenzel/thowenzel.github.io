@@ -11,12 +11,12 @@ __Standard-SSH-Port des Servers ändern__
 Eine einfache Änderung, die aber zumindest automatisierte Brute-Force-Attacken auf den üblicherweise genutzten Port 22 ins leeren laufen lässt.
 Dazu die SSH-Konfigurations-Datei öffnen:
 ```
-vi /etc/ssh/sshd_conf
+nano /etc/ssh/sshd_config
 ```
 
-In der Datei den Port von 22 auf einen Wert zwischen 49152 und 65535 setzen. Anschließend SSH-Daemon neu laden:
+In der Datei den Port von 22 auf einen Wert zwischen 49152 und 65535 setzen. Anschließend SSH neu starten:
 ```
-systemctl daemon-reload sshd
+systemctl restart sshd.service
 ```
 
 #### Weiterführende Links:
