@@ -8,5 +8,6 @@ data:
 ---
 
 #### Weiterführende Links:
-* [Install Nginx, MariaDB, PHP7 (LEMP) on Arch Linux Server](https://www.linuxbabe.com/linux-server/install-lemp-nginx-mariadb-php7-arch-linux-server)
-* [How to Install Wallabag on Arch Linux VPS with LEMP Stack](https://www.linuxbabe.com/arch/install-wallabag-arch-linux-server-nginx-mariadb-php7)
+* [Install Apache, MariaDB and PHP7 (LAMP Stack) on Ubuntu 16.04 LTS](https://www.linuxbabe.com/linux-server/install-apache-mariadb-and-php7-lamp-stack-on-ubuntu-16-04-lts)
+* [Install Wallabag on Ubuntu 16.04 Server with LAMP](https://www.linuxbabe.com/ubuntu/install-wallabag-ubuntu-16-04)
+* [root-Login-Problem mit MariaDB](https://kofler.info/root-login-problem-mit-mariadb/)
