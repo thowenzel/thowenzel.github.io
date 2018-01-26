@@ -6,6 +6,11 @@ data:
   tags: "linux, server"
   humandate: 25.01.2018
 ---
+__SSL einrichten__
+Fix:
+```
+sudo certbot --authenticator standalone --installer apache -d wallabag.wenzelt.de -d nextcloud.wenzelt.de --pre-hook "systemctl stop apache2" --post-hook "systemctl start apache2"
+```
 
 #### Weiterführende Links:
 * [Install Apache, MariaDB and PHP7 (LAMP Stack) on Ubuntu 16.04 LTS](https://www.linuxbabe.com/linux-server/install-apache-mariadb-and-php7-lamp-stack-on-ubuntu-16-04-lts)
