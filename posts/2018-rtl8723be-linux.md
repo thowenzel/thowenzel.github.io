@@ -1,4 +1,4 @@
-title: WLAN-Modul RTL8723BE unter Linux
+title: WLAN-Modul RTL8723BE with Linux
 published_date: "2018-02-12 00:00:00 +0000"
 layout: default.liquid
 data:
@@ -16,5 +16,5 @@ lspci -nnk | grep -i network -A2
 
 After it was so clear that in my laptop is the module RTL8723BE, I was able to search the web specifically for information. I was probably not the first one with the problem, so I quickly found out more information. On the website below I found a solution that works for me too.
 
-#### Weiterführende Links:
+#### Related links:
 * [Anleitung: Realtek WLAN und Bluetooth unter Linux (RTL8723BE)](https://www.au-ja.de/guide-realtek-wlan+bluetooth-unter-linux-%28rtl8723be%29-1.phtml)
