@@ -12,7 +12,7 @@ __All content on this site, unless otherwise noted, is licensed as follows:__
 
 - Other content, including blog posts, talks, and images, is released under the [Creative Commons Attribution-ShareAlike 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/)
 
-### MIT License
+## MIT License
 
 ```
 MIT License
@@ -38,7 +38,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-### CC BY-SA 4.0 License
+## CC BY-SA 4.0 License
 
 ```
 Attribution 4.0 International
@@ -438,6 +438,7 @@ public licenses.
 Creative Commons may be contacted at creativecommons.org.
 ```
 
-### Header image
+## Header image
+
 License for the header image is Public Domain CC0.
 
