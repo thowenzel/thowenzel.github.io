@@ -1,7 +1,7 @@
 title: Pacman Tipps&Tricks
 published_date: "2018-05-03 00:00:00 +0000"
 layout: default.liquid
-is_draft: true
+is_draft: false
 data:
   tags: "linux, arch linux, arch"
   humandate: 03.05.2018
