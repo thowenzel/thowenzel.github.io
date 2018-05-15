@@ -1,4 +1,5 @@
 title: Pacman Tipps&Tricks
+permalink: "/2018/pacman_hints.html"
 published_date: "2018-05-03 00:00:00 +0000"
 layout: default.liquid
 is_draft: false
@@ -8,7 +9,8 @@ data:
 ---
 __Arch-Mirrorliste aktualisieren und optimieren__
 
-Die Mirrorliste wird über das Paket pacman-mirrorlist regelmäßig aktualisiert, allerdings ist es hilfreich diese Liste ein wenig auszumisten und nach optimaler Erreichbarkeit zu sortieren. Das lässt sich in der Shell recht einfach durchführen:
+Die Mirrorliste wird über das Paket *pacman-mirrorlist* regelmäßig aktualisiert. Allerdings kann es hilfreich sein, diese Liste etwas auszumisten und die Server nach optimaler Erreichbarkeit zu sortieren.
+Das lässt sich über die Shell einfach durchführen:
 ```
 $ sudo -s
 $ cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
@@ -25,7 +27,8 @@ $ pacaur -S fetchmirrors
 $ fetchmirrors
 ```
 
-Fetchmirrors holt sich die aktuelle Mirrorliste aus dem Netz und bittet euch anschließend die für euch entsprechend zuständige Länderliste auszuwählen — Für Deutschland also die 12. Anschließend optimiert das Skript die Liste mittels rankmirrors und spielt die reduzierte Version ins System ein — dazu fordert das Programm kurz Root-Rechte an. So klappert die Arch-Paketverwaltung nur noch die für euch am besten erreichbaren Arch-Mirrors ab. Mittels pacman -Syu ruft ihr dann wie gewohnt die Paketquellen ab und spielt die neusten Updates ein. Sollte einer der Mirror irgendwann mal spürbar klemmen, führt ihr einfach nochmal fetchmirrors aus oder optimiert die Liste bei Bedarf nochmal per Hand.
+Fetchmirrors holt sich die aktuelle Mirrorliste aus dem Netz. Anschließend muss die gewünschte Länderliste ausgewählt werden — Für Deutschland also die 12. Anschließend optimiert das Skript die Liste mittels *rankmirrors* und spielt die reduzierte Version ins System ein (dazu fordert es kurz Root-Rechte an).
+Sollte einer der Mirror irgendwann mal merklich klemmen, einfach *fetchmirrors* neu ausführen, oder Liste nochmal per Hand optimieren.
 
 #### Weiterführende Links:
 * [Mirrors sortieren](https://wiki.archlinux.org/index.php/Mirrors#Sorting_mirrors)
