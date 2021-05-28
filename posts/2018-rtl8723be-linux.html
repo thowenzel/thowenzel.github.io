@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Start Open Graph Meta Tags -->
+<meta property="og:title" content="My nerdy blog - Thomas Wenzel">
+<meta property="og:image" content="thowenzel.github.io/assets/thowenzel_og_preview.png">
+<meta property="og:site_name" content="My nerdy notes">
+<meta property="og:description" content="Personal website of Thomas Wenzel. Rust lover.">
+<meta property="og:url" content="https://thowenzel.github.io/">
+<meta property="og:type" content="website">
+<!-- End Open Graph Meta Tags -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Thomas Wenzel"/>
+<meta name="description" content="Personal website of Thomas Wenzel. Rust lover."/>
+<meta name="keywords" content="rust">
+
+<title>My nerdy notes</title>
+
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" >
+  </head>
+
+  <body class="blog">
+    <!-- Start navigation -->
+<nav class="header-basic">
+    <div class="header-limiter">
+    	<h1><a href="https://thowenzel.github.io/">My nerdy notes</span></a></h1>
+		<div class="menu">
+    		<a href="/">Home</a>
+			<a href="/archiv">Archiv</a>
+	    	<a href="/about">About</a>
+        </div>
+</nav>
+<!-- End navigation -->
+
+<!-- Start headerimage-->
+<header>
+    <div class="container">
+        <div class="intro-image"/>
+    </div>
+</header>
+<!-- End headerimage-->
+    <main class="site-content">
+     <div class="wrapper section-inner">
+        
+          <div class="posts">
+  <article>
+    <!-- Start post-header -->
+      <div class="post-header">
+        <h2 class="post-title">WLAN-Modul RTL8723BE with Linux</h2>
+      <div class="post-meta">
+        <span class="post-date">
+          
+            <i>Veröffentlicht am 12.02.2018</i>
+          
+        </span>
+        <span class="post-date">
+          
+            <i> - tags: linux, archlinux</i>
+          
+        </span>
+      </div>
+      <!-- End post-header -->
+      <!-- Start post-content -->
+      <div class="post-content">
+        <p>Because my good old Toshiba notebook died some days ago, a new one had to come. My choice fell on a cheap 15&quot; device from <a href="https://www.notebooksbilliger.de/hp+15+ay107ng+notebook/">HP</a>. I admit, I did not research for a long time. So there was a likelihood that I would encounter problems installing Linux. The distribution of my choice has been Arch Linux for some time. Contrary to my fears, the installation went smoothly.</p>
+<p>However, the reception performance of the WLAN module left much to be desired. Although a WLAN connection was possible in principle, but only if the WLAN was in the immediate vicinity. 2 meters away from the router I still had moderate reception, a few meters further he was completely gone.</p>
+<p>So I first of all determined, which hardware module is exactly installed:</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">lspci -nnk | grep -i network -A2
+</span></pre>
+<p>After it was so clear that in my laptop is the module RTL8723BE, I was able to search the web specifically for information. I was probably not the first one with the problem, so I quickly found out more information. On the website below I found a solution that works for me too.</p>
+<h4>Related links:</h4>
+<ul>
+<li><a href="https://www.au-ja.de/guide-realtek-wlan+bluetooth-unter-linux-%28rtl8723be%29-1.phtml">Anleitung: Realtek WLAN und Bluetooth unter Linux (RTL8723BE)</a></li>
+</ul>
+
+      </div>
+      <!-- End post-content -->
+    </article>
+</div>
+
+        
+      </div>
+    </main>
+    <footer>
+    <div class="splitter"></div>
+	<div class="bar">
+		<div class="bar-wrap">
+			<ul class="links">
+				<li><a href="https://thowenzel.github.io/">Home</a></li>
+				<li><a href="/archiv">Archiv</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/license/">License</a></li>
+			</ul>
+			<div class="social">
+				<a href="https://github.com/thowenzel">
+					<i class="fa fa-github" aria-hidden="true"></i> Github
+				</a>
+			</div>
+			<div class="clear"></div>
+			<div class="copyright">&copy; 2017 - 2018 / built with ❤️ and
+        		<a href="https://github.com/cobalt-org/cobalt.rs">Cobalt</a></div>
+		</div>
+	</div>
+</footer>
+  </body>
+</html>

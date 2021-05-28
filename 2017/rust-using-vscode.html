@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Start Open Graph Meta Tags -->
+<meta property="og:title" content="My nerdy blog - Thomas Wenzel">
+<meta property="og:image" content="thowenzel.github.io/assets/thowenzel_og_preview.png">
+<meta property="og:site_name" content="My nerdy notes">
+<meta property="og:description" content="Personal website of Thomas Wenzel. Rust lover.">
+<meta property="og:url" content="https://thowenzel.github.io/">
+<meta property="og:type" content="website">
+<!-- End Open Graph Meta Tags -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Thomas Wenzel"/>
+<meta name="description" content="Personal website of Thomas Wenzel. Rust lover."/>
+<meta name="keywords" content="rust">
+
+<title>My nerdy notes</title>
+
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" >
+  </head>
+
+  <body class="blog">
+    <!-- Start navigation -->
+<nav class="header-basic">
+    <div class="header-limiter">
+    	<h1><a href="https://thowenzel.github.io/">My nerdy notes</span></a></h1>
+		<div class="menu">
+    		<a href="/">Home</a>
+			<a href="/archiv">Archiv</a>
+	    	<a href="/about">About</a>
+        </div>
+</nav>
+<!-- End navigation -->
+
+<!-- Start headerimage-->
+<header>
+    <div class="container">
+        <div class="intro-image"/>
+    </div>
+</header>
+<!-- End headerimage-->
+    <main class="site-content">
+     <div class="wrapper section-inner">
+        
+          <div class="posts">
+  <article>
+    <!-- Start post-header -->
+      <div class="post-header">
+        <h2 class="post-title">Rust und Visual Studio Code</h2>
+      <div class="post-meta">
+        <span class="post-date">
+          
+            <i>Veröffentlicht am 06.04.2017</i>
+          
+        </span>
+        <span class="post-date">
+          
+            <i> - tags: rust, vscode</i>
+          
+        </span>
+      </div>
+      <!-- End post-header -->
+      <!-- Start post-content -->
+      <div class="post-content">
+        <p>Wie in einem älteren Beitrag angekündigt habe, nutze ich inzwischen <strong><a href="https://code.visualstudio.com/">Visual Studio Code</a></strong>.</p>
+<p><strong>Visual Studio Code</strong> ist ein unter der MIT-Lizenz stehender Quelltext-Editor von Microsoft. Er ist für die Betriebssysteme Windows, MacOS und Linux verfügbar. Technologisch basiert <strong>Visual Studio Code</strong> auf Electron (Framework) und ermöglicht auch Debugging, IntelliSense und Versionsverwaltung.</p>
+<p><img src="../img/vscode_editor_overview.png" alt="Visual Studio Code" /></p>
+<p>Warum ich umgestiegen bin, das habe ich ja in einem älteren <a href="../2017/atom-my-conclusion.html">Blogbeitrag</a> schon beschrieben. Inzwischen kann ich sagen: <strong>Visual Studio Code</strong> rockt!</p>
+<h3>Extensions</h3>
+<p>VSCode lässt sich über das Installieren von Extensions sehr gut an die eigenen Bedürfnisse anpassen.</p>
+<p><img src="../img/vscode_editor_installed_extensions.png" alt="Meine Liste der installierten Erweiterungen in VSCode" /></p>
+<h3>VSCode installieren und für Rust anpassen</h3>
+<p>Ich arbeite momentan auf einem Windows-System, daher weichen die nachfolgenden Schritte auf Linux- oder Mac-Systemen ggf. leicht ab.
+VSCode ist schnell installiert, dazu einfach auf der Seite https://code.visualstudio.com/ den passenden Installer wählen und los.</p>
+<p>VSCode unterstützt das Highlighting von Rust-Syntax von Haus aus. Um aber einigermaßen produktiv arbeiten zu können, erwarte ich von einem Editor natürlich noch etwas mehr. Das Compilieren, Ausführen und Testen von Rust-Code soll möglich sein.</p>
+<p>Ich habe daher <strong><a href="https://github.com/editor-rs/vscode-rust">Rust</a></strong> installiert, diese erweitert die Sprachunterstützung für Rust in VSCode erheblich. Die Erweiterung kann durch Auswahl des unteren Buttons in der Seitenleiste und der Suche nach 'Rust' installiert werden.</p>
+<p><img src="../img/vscode_install_rust_addon.gif" alt="Install vscode-rust" /></p>
+<p>Nach der Installation lassen sich die Cargo-Kommandos, wie z.B. <code>build</code>, <code>test</code>, <code>run</code>, direkt in VSCode ausführen (Befehlspalette mit <em>Ctrl+Shift+P</em> öffnen, die Befehle beginnen alle mit <code>Cargo: </code>).</p>
+<p>Alternativ lässt sich <code>cargo</code> natürlich auch über das integrierte Terminal bedienen.</p>
+<p>The Erweiterung <strong><a href="https://github.com/editor-rs/vscode-rust">Rust</a></strong> besitzt zwar eine experimentelle Unterstützung für den Rust Language Server, aber richtig gut funktioniert das noch nicht. Daher aktivieren wir noch den legacy mode von <strong>racer</strong> in the Einstellungen von VSCode.</p>
+<p>Die Einstellungen werden von VSCode in einer JSON-Datei gespeichert und müssen auch in dieser bearbeitet werden. Dazu <em>Datei &gt; Einstellungen &gt; Einstellungen</em> aufrufen (oder <em>Ctrl + Komma</em> klicken). Es öffnet sich die Datei <code>settings.json</code>. Auf der rechten Seite können die Benutzerdefinierten Einstellungen eingetragen werden. Dort folgende Einstellungen vornehmen:</p>
+<pre style="background-color:#2b303b;">
+<span style="color:#c0c5ce;">{
+</span><span style="color:#c0c5ce;">    &quot;editor.formatOnSave&quot;: true,
+</span><span style="color:#c0c5ce;">    &quot;editor.rulers&quot;: [80],
+</span><span style="color:#c0c5ce;">    &quot;files.trimTrailingWhitespace&quot;: true,
+</span><span style="color:#c0c5ce;">    &quot;rust.actionOnSave&quot;: &quot;check&quot;,
+</span><span style="color:#c0c5ce;">    &quot;rust.forceLegacyMode&quot;: true,
+</span><span style="color:#c0c5ce;">    &quot;workbench.iconTheme&quot;: &quot;vscode-icons&quot;
+</span><span style="color:#c0c5ce;">}
+</span></pre>
+<h4>Weiterführende Links:</h4>
+<ul>
+<li><a href="http://asquera.de/blog/2017-03-03/setting-up-a-rust-devenv/">Setting up a Rust Development Environment</a></li>
+<li><a href="https://mobiarch.wordpress.com/2015/06/16/rust-using-visual-studio-code/">Rust Using Visual Studio Code</a></li>
+<li><a href="https://klausi.github.io/rustnish/2017/05/28/using-visual-studio-code-for-rust-on-ubuntu.html">Using Visual Studio Code for Rust on Ubuntu</a></li>
+<li><a href="https://sherryummen.in/2016/09/02/debugging-rust-on-windows-using-visual-studio-code/">Debugging Rust on Windows using Visual Studio Code</a></li>
+<li><a href="https://scotch.io/tutorials/best-of-visual-studio-code-features-plugins-acting-like-atom-and-sublime">Best of Visual Studio Code: Features, Plugins, Acting Like Atom and Sublime</a></li>
+<li><a href="http://jsdiaries.com/2016/11/27/visual-studio-code-features-part-1/">Visual Studio Code Features Part 1</a></li>
+<li><a href="http://jsdiaries.com/2017/01/09/visual-studio-code-features-part-2/">Visual Studio Code Features Part 2</a></li>
+</ul>
+
+      </div>
+      <!-- End post-content -->
+    </article>
+</div>
+
+        
+      </div>
+    </main>
+    <footer>
+    <div class="splitter"></div>
+	<div class="bar">
+		<div class="bar-wrap">
+			<ul class="links">
+				<li><a href="https://thowenzel.github.io/">Home</a></li>
+				<li><a href="/archiv">Archiv</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/license/">License</a></li>
+			</ul>
+			<div class="social">
+				<a href="https://github.com/thowenzel">
+					<i class="fa fa-github" aria-hidden="true"></i> Github
+				</a>
+			</div>
+			<div class="clear"></div>
+			<div class="copyright">&copy; 2017 - 2018 / built with ❤️ and
+        		<a href="https://github.com/cobalt-org/cobalt.rs">Cobalt</a></div>
+		</div>
+	</div>
+</footer>
+  </body>
+</html>
